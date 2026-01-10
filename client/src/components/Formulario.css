@@ -1,0 +1,96 @@
+.formulario-container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 3rem;
+  background-color: #baafaf;
+  border: 2px solid #2929d208; /* Borde azul institucional */
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 8px 20px rgba(12, 2, 2, 0.1); /* Sombra suave */
+}
+
+.formulario-container h2,
+.formulario-container h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.formulario-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.formulario-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-grid label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+
+.formulario-grid input,
+.formulario-grid select,
+.formulario-grid textarea {
+  padding: 0.7rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.formulario-grid input:focus,
+.formulario-grid select:focus,
+.formulario-grid textarea:focus {
+  border-color: #0078d4;
+  outline: none;
+}
+
+.formulario-grid textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.formulario-grid .vigencia-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.formulario-grid .vigencia-group input,
+.formulario-grid .vigencia-group select {
+  flex: 1;
+}
+
+.formulario-grid .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.formulario-boton {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.formulario-boton button {
+  background-color: #0078d4;
+  color: white;
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-boton button:hover {
+  background-color: #005fa3;
+}
+
