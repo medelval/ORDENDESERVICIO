@@ -94,3 +94,8 @@
   background-color: #005fa3;
 }
 
+.error {
+  color: #c0392b;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}

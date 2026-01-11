@@ -104,12 +104,10 @@ function DetallePage() {
       y += 5;
       doc.setFontSize(8);
       doc.setFont(undefined, 'normal');
-      const leyenda =
-        'Por este medio acepto y me comprometo a guardar sigilo y confidencialidad...';
+      const leyenda = `Por este medio acepto y me comprometo a guardar sigilo y confidencialidad de la información correspondiente al Expediente Electrónico utilizado por el O.P.D Hospital Civil de Guadalajara, de conformidad con la NORMA Oficial Mexicana NOM-024-SSA3-2010, así como lo establecido en el art. 21 de la Ley de Transparencia y Acceso a la Información Pública del Estado de Jalisco y sus Municipios, en relación con la Ley de Protección de Datos Personales en Posesión de Sujetos Obligados del Estado de Jalisco y sus Municipios,    referente a "los datos personales de una persona física identificada o identificable", que se recaban en la institución para fines de atención médica.`;
       const leyendaLines = doc.splitTextToSize(leyenda, anchoTexto - 5);
-      doc.text(leyendaLines, left, y);
+      doc.text(leyendaLines, left, y);  
       y += leyendaLines.length * 3.2;
-
       y += 18;
       doc.line(left, y, left + 85, y);
       doc.line(left + 105, y, right, y);
